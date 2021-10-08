@@ -1,0 +1,21 @@
+create table:
+
+
+        Schema::create('bestone', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('airline');
+            $table->timestamps();
+        });
+
+update:table
+
+
+   Schema::table('bestone', function (Blueprint $table) {
+            $table->integer('vote');
+           
+        });
+
+rename table:
+    Schema::rename('BESTONE', 'BESTONE1');
+
